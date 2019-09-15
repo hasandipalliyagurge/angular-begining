@@ -1,0 +1,1 @@
+Angular 7 offers ActivatedRoute interface class, it carries the information about a route linked to a component loaded into the Angular app template. An ActivatedRoute contains the router state tree within the angular app's memory

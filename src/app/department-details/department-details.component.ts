@@ -11,6 +11,10 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
   <a (click)="goPrevious()">Previous </a>
   <a (click)="goNext()">Next</a>
 
+  <div>
+  <button (click)="gotoDepartments()">Back</button>
+  </div>
+
   `,
   styles: []
 })
@@ -41,4 +45,8 @@ goNext(){
   this.router.navigate(['/departments',nextId])
 }
   
+gotoDepartments(){
+   let selectedId = this.departmentId ? this.departmentId: null;
+   this.router.navigate(['/departments',{id:selectedId, test: 'testValue'}]); //test is another optional parameter which can be similarly used
+}
 }
