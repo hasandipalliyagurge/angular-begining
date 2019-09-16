@@ -1,1 +1,8 @@
-Angular 7 offers ActivatedRoute interface class, it carries the information about a route linked to a component loaded into the Angular app template. An ActivatedRoute contains the router state tree within the angular app's memory
+Angular 7 offers ActivatedRoute interface class, it carries the information about a route linked to a component loaded into 
+the Angular app template. An ActivatedRoute contains the router state tree within the angular app's memory
+
+paraMap observable-The Angular Router allows you to easily retrieve parameters from the URL which is an essential functionality 
+that's required by most web applications. You can use both ways: the paramMap observable or the snapshot way but the latter 
+requires you to be careful when re-using components
+
+to add a bit of flexibility to the routings we can add relative navigation
