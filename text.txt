@@ -5,4 +5,4 @@ paraMap observable-The Angular Router allows you to easily retrieve parameters f
 that's required by most web applications. You can use both ways: the paramMap observable or the snapshot way but the latter 
 requires you to be careful when re-using components
 
-to add a bit of flexibility to the routings we can add relative navigation
+Imoredr to add a bit of flexibility to the routings we can add relative navigation
