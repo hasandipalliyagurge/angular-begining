@@ -6,3 +6,7 @@ that's required by most web applications. You can use both ways: the paramMap ob
 requires you to be careful when re-using components
 
 Imoredr to add a bit of flexibility to the routings we can add relative navigation
+
+The way to specify child routes in angular is to use chidren property and set it to array or routes.
+
+By adding <router-outlet></router-outlet> in the department-detail.component users will be able to navigate from the url
