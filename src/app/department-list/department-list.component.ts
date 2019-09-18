@@ -3,6 +3,12 @@ import { Router,ActivatedRoute, ParamMap }from '@angular/router';
 @Component({
   selector: 'app-department-list',
   template: `
+  <nav>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  <br>
+  <a routerLink="/employees" routerLinkActive="active">Employees</a>
+</nav>
+
     <h3>
     Department List
     </h3>

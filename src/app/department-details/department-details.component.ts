@@ -5,7 +5,7 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
 @Component({
   selector: 'app-department-details',
   template: `
-  <h3>you have selected department with id = {{departmentId}}</h3>
+  <h3 [class]="successClass">You have selected Department with id = {{departmentId}}</h3>
   <p>
     <button (click)="showOverview()">Overview</button>
     <button (click)="showContact()">Contact</button>
@@ -18,11 +18,16 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
   </div>
 
   `,
-  styles: []
+  styles: [`
+    .text-success{
+      color:grey;
+    }
+  `]
 })
 export class DepartmentDetailsComponent implements OnInit {
 
   public departmentId;
+  public successClass="text-success";
   constructor(private route: ActivatedRoute, private router:Router) { }
 
   ngOnInit() {
