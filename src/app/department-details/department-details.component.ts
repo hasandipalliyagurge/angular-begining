@@ -5,7 +5,12 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
 @Component({
   selector: 'app-department-details',
   template: `
-  <h3 [class]="successClass">You have selected Department with id = {{departmentId}}</h3>
+  <h3 [class]="succClass">You have selected Department with id = {{departmentId}}</h3>
+  <img class="img-thumbnail" src="assets/image/img1.png">
+  <img class="img-thumbnail" src="assets/image/img2.png">
+  <img class="img-thumbnail" src="assets/image/img3.png">
+  <img class="img-thumbnail" src="assets/image/img4.png">
+  <img class="img-thumbnail" src="assets/image/img5.png">
   <p>
     <button (click)="showOverview()">Overview</button>
     <button (click)="showContact()">Contact</button>
@@ -19,7 +24,7 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
 
   `,
   styles: [`
-    .text-success{
+    .text-succ{
       color:grey;
     }
   `]
@@ -27,7 +32,7 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
 export class DepartmentDetailsComponent implements OnInit {
 
   public departmentId;
-  public successClass="text-success";
+  public succClass="text-succ";
   constructor(private route: ActivatedRoute, private router:Router) { }
 
   ngOnInit() {
