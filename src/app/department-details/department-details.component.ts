@@ -6,11 +6,14 @@ import {  ActivatedRoute, Router, ParamMap }from '@angular/router';
   selector: 'app-department-details',
   template: `
   <h3 [class]="succClass">You have selected Department with id = {{departmentId}}</h3>
+  <a href="departments">
   <img class="img-thumbnail" src="assets/image/img1.png">
   <img class="img-thumbnail" src="assets/image/img2.png">
   <img class="img-thumbnail" src="assets/image/img3.png">
   <img class="img-thumbnail" src="assets/image/img4.png">
   <img class="img-thumbnail" src="assets/image/img5.png">
+  </a>
+
   <p>
     <button (click)="showOverview()">Overview</button>
     <button (click)="showContact()">Contact</button>
